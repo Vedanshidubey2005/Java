@@ -1,0 +1,39 @@
+
+class Circle{
+    double x,y;
+    double r;
+    double circumference(){
+        return 2*3.14159*r;
+    }
+    double area(){
+        return (22/7)*r*r;
+    }
+}
+class Cuboid{
+    double w,h,d;
+    double area(){
+       double a= (w*h+h*d+d*w)*2;
+        return a ;
+    }
+    double Volume(){
+        return w*h*d;
+        
+    }
+}
+public class multipleclass {
+    public static void main (String args[]){
+        Circle c1 = new Circle();
+        Cuboid cu = new Cuboid();
+        c1.x= 0.0;
+        c1.y=0.0;
+        c1.r=6.0;
+        cu.w= 5.0;
+        cu.h=3.0;
+        cu.d=4.0;
+        System.out.println("Cicumference"+ c1.circumference());
+        System.out.println("Area"+ c1.area());
+        System.out.println("Cicumference"+ cu.area());
+        System.out.println("Area"+ cu.Volume());
+
+}
+}
