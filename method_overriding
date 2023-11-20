@@ -1,0 +1,22 @@
+class Parent{
+    void show(){
+        System.out.println("I am Parent");
+    }
+}
+class Child extends Parent{
+    void show(){
+        System.out.println("I am Child");
+    }
+}
+public class overriding {
+    public static void main(String[] args) {
+        Parent p1 = new Parent();
+        Child c1 = new Child();
+        Parent p2 = new Child();
+        // Child c2 = new Parent();           //error: incompatible types: Parent cannot be converted to Child
+        p1.show();
+        c1.show();
+        p2.show();
+        // c2.show();                      //  error: incompatible types: Parent cannot be converted to Child
+    }
+}
