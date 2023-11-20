@@ -1,1 +1,15 @@
+interface A{
+    void show();
+}
 
+class inter implements A{
+   public void show(){
+        System.out.println(" I am C");
+    }
+    public static void main(String args[]){
+         A a = new inter();
+         a.show();
+    }
+}
+
+// I am C
