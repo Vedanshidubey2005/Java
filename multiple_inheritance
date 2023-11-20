@@ -1,0 +1,22 @@
+interface Bank{
+    void show();
+}
+
+class SBI implements Bank{
+   public void show(){
+        System.out.println(" I am C");
+    }
+}
+class ICICI implements Bank{
+   public void show(){
+        System.out.println(" I am I");
+    }
+}
+public class inter2{
+    public static void main(String args[]){
+         Bank a = new SBI();
+         Bank b = new ICICI();
+         a.show();
+         b.show();
+    }
+}
