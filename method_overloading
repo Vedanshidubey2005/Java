@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Shape{
+    float area (float a,float b){
+      return a*b;
+    }
+    float area (float a){
+      return a*a;
+    }
+}
+public class overloadingg {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    Shape s = new Shape();
+    System.out.println("Enter length and breadth");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    System.out.println("Area of rectangle is :"+s.area(a,b));
+    System.out.println("Enter side");
+    int c = sc.nextInt();
+    System.out.println("Area of square is :"+s.area(c));
+    }
+
+}
+
+
+// Enter length and breadth
+// 3
+// 4
+// Area of rectangle is :12.0
+// Enter side
+// 6
+// Area of square is :36.0
