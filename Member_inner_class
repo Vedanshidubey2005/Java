@@ -1,0 +1,20 @@
+class Outer{
+    private int x =15;
+    class Inner{
+        void msg(){
+            System.out.println("Beautiful");
+            System.out.println("data is :" + x);
+        }
+        
+    }
+  
+}
+public class MIC {
+    public static void main(String[] args) {
+        Outer ob = new Outer();
+        Outer.Inner in = ob.new Inner();
+        in.msg();
+    }
+}
+// Beautiful
+// data is :15
