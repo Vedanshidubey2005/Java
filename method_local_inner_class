@@ -1,0 +1,23 @@
+class Baharwali{
+    private int data = 16;
+    void display7(){
+        final int y= 2005;
+        class Local{
+           void innermethod(){
+            System.out.println("main heroine hu");
+            System.out.println("my birth year is "+ y);
+           }
+        }
+        Local inn = new Local();
+        inn.innermethod();
+    }
+}
+public class MLIC {
+    public static void main(String[] args) {
+        Baharwali ba = new Baharwali();
+        ba.display7();
+    }
+}
+
+// main heroine hu
+// my birth year is 2005
