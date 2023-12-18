@@ -1,0 +1,23 @@
+ interface Int1 {
+    public void method1();
+}
+ interface Int2 {
+   public void method2();
+}
+class Example implements Int2{
+   public void method1(){
+        System.out.println("Good Morning Vedanshi");
+    }
+    public void method2(){
+        System.out.println("You become what you think ,remember that.");
+    }
+}
+public class inhinter {
+    public static void main(String[] args) {
+        Example e = new Example();
+        e.method1();
+        e.method2();
+    }
+}
+// Good Morning Vedanshi
+// You become what you think ,remember that.
