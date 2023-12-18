@@ -1,0 +1,23 @@
+
+abstract class Bike{
+    abstract void run();
+    void display22(){
+        System.out.println("kaho na pyaar hai");
+    }
+}
+class Jupiter extends Bike{
+    void run(){
+        System.out.println("Meri pyari jupi");
+    }
+}
+ class Abstractex {
+    public static void main(String[] args) {
+        // Bike obj = new Bike();  error: Bike is abstract; cannot be instantiated
+        // obj.run();
+        Bike obj = new Jupiter();
+        obj.run();
+        obj.display22();
+    }
+}
+
+// Meri pyari jupi
