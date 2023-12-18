@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Students{
+    String name;
+    int age;
+ Students(String i , int b){
+    name=i;
+    age=b;
+    
+   }}
+public class cons4 {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+    //    Students s11 = new Students();
+       System.out.println("Enter details :");
+       String str= sc.nextLine();   
+       int age = sc.nextInt();
+       Students s11 = new Students(str,age);
+
+       System.out.println("Details through parametrized constructor : "+s11.name+" "+s11.age);
+
+    }
+}
+
+// Enter details :
+// vedi    
+// 19
+// Details through parametrized constructor : vedi 19
