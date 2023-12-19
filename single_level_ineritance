@@ -1,0 +1,25 @@
+class Animal{
+    void sound(){
+        System.out.println("Different");
+    }
+}
+class Dog extends Animal{
+    void eat(){
+        System.out.println("Eating");
+    }
+    void place(){
+        System.out.println("kennel");
+    }
+}
+class Test{
+    public static void main (String[] args){
+        Dog d = new Dog();
+
+        d.sound();
+        d.place();
+        d.eat();
+    }
+}
+// Different
+// kennel
+// Eating
