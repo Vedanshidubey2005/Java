@@ -1,0 +1,25 @@
+ interface Currency{
+    String SYMBOL ="$";
+    double coverttoDollar(double amount);
+}
+ class Dollar implements Currency{
+    public double coverttoDollar(double amount){
+        return amount;
+    }
+}
+class Euro implements Currency{
+    public double coverttoDollar(double amount){
+        return amount*1.18 ;
+    }
+}
+
+
+public class intervar {
+    public static void main(String[] args) {
+        Currency cur = new Dollar();
+        Currency euro = new Euro();
+        double amount = 75;
+        System.out.println("In dollars :"+cur.coverttoDollar(amount));
+        System.out.println("In Euros :"+euro.coverttoDollar(amount));
+    }
+}
