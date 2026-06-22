@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class A{
+class Condtionalss{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
       //basic if
