@@ -51,6 +51,21 @@ class Condtionalss{
     //     max =c;    }
 //     int max = Math.max( c , Math.max(a,b));
 //    System.out.println(max);
+
+//  int x = s.nextInt(); 
+//  int y = s.nextInt();
+//  int z = s.nextInt();
+//  int result = 0;
+//  if(x>=y && x>=z){
+//   result=x;
+// }
+//  else if(y>=x && y>=z){
+//   result=y;
+// }
+// else
+//   result =z;
+// System.out.println(result);
+
 //Q2
    
     //    int n = input.nextInt();
