@@ -2,6 +2,17 @@ import java.util.Scanner;
 class A{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+      //basic if
+   // int age;
+   // System.out.println("Enter age");
+   // age= sc.nextInt();
+   // if(age>=18){
+   //      System.out.println("eligible");
+   //  }
+   //  else {
+   //      System.out.println("not");
+   //  }
+
         //LOOPS
 
         // for(int i = 1;i <=5;i+=2){
