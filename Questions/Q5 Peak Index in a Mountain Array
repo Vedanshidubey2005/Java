@@ -1,0 +1,26 @@
+class Solution {
+    public int peakIndexInMountainArray(int[] arr) {
+       //mountain array = 0 1 2 1 0 ans --> 2
+       int start = 0;
+       int end = arr.length -1;
+
+       while(start < end){
+        int mid = start + (end -start)/2;
+        // we have to search that which part of array is sorted
+        if(arr[mid]> arr[mid+1]){
+            // 2 > 1 
+            //we are in decreasing part
+            end= mid;
+        }
+        else{
+            // arr[mid]< arr[mid]+1
+            // 1< 2
+            // we are in increaisng part , majority will lie right side
+            start = mid +1;
+        }
+       }
+        // now when start and end both point to same element , it will be the max
+        return start;
+       
+    }
+}
