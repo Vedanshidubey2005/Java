@@ -1,0 +1,16 @@
+class Solution {
+    public int totalMoney(int n) {
+        int totals =  0;
+        int fullW = n / 7;
+        int remDays = n% 7;
+        for(int i = 0 ; i < fullW ; i ++){
+            for(int j = i+1 ; j<= i +7 ; j++){
+                totals = totals + j;
+            }
+        }
+        for(int i = fullW + 1; i <= remDays + fullW ; i ++){
+            totals = totals + i;
+        }
+        return totals;
+    }
+}
