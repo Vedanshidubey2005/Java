@@ -1,0 +1,25 @@
+class Solution {
+    public int integerReplacement(int n) {
+        int op=0;
+        long m =n;
+        while( m != 1){
+            int curr=0;
+         if((m % 2 ) == 0  ){
+            m= m/2;
+            // curr++; 
+           // op++;
+            //op = Math.min( curr, op);
+         }
+         else if((m & 2) ==0  || m==3){
+          m=m-1;
+       
+        }
+         else {
+            m=m+1;
+           
+        }
+        op++;
+        }
+        return op;
+    }
+}
