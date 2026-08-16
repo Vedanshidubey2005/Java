@@ -1,0 +1,24 @@
+class Solution {
+    public int specialArray(int[] nums) {
+     
+        int n = nums.length -1;
+        int left =0  , hi = nums.length;
+      
+            while( left <=hi){
+                int mid = left + ( hi - left)/2;
+                int ans = count(nums, mid);
+                if(mid == ans) return mid;
+                else if( ans > mid) left = mid +1;
+                else hi = mid -1;
+            
+        }
+        return -1;
+    }
+    int count(int[] nums, int mid){
+        int ans =0;
+        for(int i =0; i<= nums.length -1; i++){
+            if( nums[i]>= mid) ans++;
+        }
+        return ans;
+    }
+}
