@@ -1,0 +1,20 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+     System.out.println("enter a number : ");
+    int n = sc.nextInt();
+   
+ System.out.println("ans : " + prime(n));
+
+        }
+    static boolean prime(int n){
+            if( n ==1) return false;
+    for( int i = 2 ; i * i < n; i++ ){
+      if( n % i ==0) return false;
+    }
+return true;
+    }
+}
